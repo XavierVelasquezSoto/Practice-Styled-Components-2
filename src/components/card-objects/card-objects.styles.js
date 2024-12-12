@@ -18,6 +18,31 @@ const StyledCardObjects = styled.div`
 	padding: 26px 32px 32px 32px;
 	margin-bottom: 24px;
 	border-radius: 10px;
+	@media screen and (width > 1024px) {
+		/*height: ${props => {
+			if (props.$bodyColor === 'daniel') return '282px';
+			if (props.$bodyColor === 'jonathan') return '282px';
+			if (props.$bodyColor === 'jeanette') return '572px';
+			if (props.$bodyColor === 'patrick') return '266px';
+			if (props.$bodyColor === 'kira') return '266px';
+		}}; */
+		grid-column: ${props => {
+			if (props.$bodyColor === 'daniel') return '1/3';
+			if (props.$bodyColor === 'jonathan') return '3/4';
+			if (props.$bodyColor === 'jeanette') return '1/1';
+			if (props.$bodyColor === 'patrick') return '1/4';
+			if (props.$bodyColor === 'kira') return '2/5';
+		}};
+		grid-row: ${props => {
+			if (props.$bodyColor === 'daniel') return '1/3';
+			if (props.$bodyColor === 'jonathan') return '1/3';
+			if (props.$bodyColor === 'jeanette') return '3/3';
+			if (props.$bodyColor === 'patrick') return '0';
+			if (props.$bodyColor === 'kira') return '0';
+		}};
+		border: solid black;
+		margin-bottom: 0;
+	}
 `;
 
 /* const StyledDivImg = styled.img`

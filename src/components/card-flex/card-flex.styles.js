@@ -7,6 +7,7 @@ const StyledCardFlex = styled.div`
 	@media screen and (width > 1024px) {
 		display: grid;
 		grid-template-columns: repeat(3, 282px);
+		gap: 24px 30px;
 	}
 `;
 
