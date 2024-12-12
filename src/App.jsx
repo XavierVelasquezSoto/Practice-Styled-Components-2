@@ -1,14 +1,16 @@
-import Button from './components/button/Button';
+// import Button from './components/button/Button';
+import CardContainer from './components/card-container/Card-Container';
+import CardFlex from './components/card-flex/Card-flex';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
 	return (
-		<div>
+		<>
 			<GlobalStyles />
-			<h1>Curso de React</h1>
-			<Button color='steelblue'>Click Me!</Button>
-			<Button color='#f0f'>Click Me!</Button>
-		</div>
+			<CardFlex>
+				<CardContainer />
+			</CardFlex>
+		</>
 	);
 };
 
