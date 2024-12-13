@@ -23,7 +23,7 @@ const StyledCardObjects = styled.div`
 			if (props.$bodyColor === 'daniel') return '282px';
 			if (props.$bodyColor === 'jonathan') return '282px';
 			if (props.$bodyColor === 'jeanette') return '255px';
-			if (props.$bodyColor === 'patrick') return '266px';
+			if (props.$bodyColor === 'patrick') return '255px';
 			if (props.$bodyColor === 'kira') return '572px';
 		}};
 		grid-column: ${props => {
@@ -38,11 +38,10 @@ const StyledCardObjects = styled.div`
 			if (props.$bodyColor === 'jonathan') return '1/3';
 			if (props.$bodyColor === 'jeanette') return '2/2';
 			if (props.$bodyColor === 'patrick') return '2/3';
-			if (props.$bodyColor === 'kira') return '1/4';
+			if (props.$bodyColor === 'kira') return '1/2';
 		}};
 		/* border: solid black; */
 		margin-bottom: 0;
-
 		box-shadow: rgb(207, 207, 207, 0.5) 0 0px 20px 10px;
 	}
 `;

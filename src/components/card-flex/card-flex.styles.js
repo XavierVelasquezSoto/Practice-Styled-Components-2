@@ -10,9 +10,10 @@ const StyledCardFlex = styled.div`
 		grid-template-rows: repeat(3, 255px);
 		gap: 60px 30px;
 		/* height: 282px; */
-		max-width: 1110px;
-		margin-inline: auto;
+		/* max-width: 1110px; */
+		margin: auto;
 		margin-top: 150px;
+		margin-left: 150px;
 	}
 `;
 
