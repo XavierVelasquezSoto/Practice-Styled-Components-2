@@ -68,7 +68,13 @@ const StyledImg = styled.img`
 const StyleFlexTextName = styled.p`
 	font-size: var(--line-height-l);
 	font-weight: var(--font-weight-medium);
-	color: #fff;
+	color: ${props => {
+		if (props.$bodyColor === 'daniel') return '#fff';
+		if (props.$bodyColor === 'jonathan') return '#fff';
+		if (props.$bodyColor === 'jeanette') return '#48556A';
+		if (props.$bodyColor === 'patrick') return '#fff';
+		if (props.$bodyColor === 'kira') return '#48556A';
+	}};
 	margin: 0;
 	line-height: var(--line-height-l);
 	padding-bottom: 4px;
@@ -77,7 +83,13 @@ const StyleFlexTextName = styled.p`
 const StyleFlexTextVerify = styled.p`
 	font-size: var(--line-height-m);
 	font-weight: var(--font-weight-medium);
-	color: #fff;
+	color: ${props => {
+		if (props.$bodyColor === 'daniel') return '#fff';
+		if (props.$bodyColor === 'jonathan') return '#fff';
+		if (props.$bodyColor === 'jeanette') return '#48556A';
+		if (props.$bodyColor === 'patrick') return '#fff';
+		if (props.$bodyColor === 'kira') return '#48556A';
+	}};
 	margin: 0;
 	opacity: 0.5;
 	line-height: var(--line-height-m);

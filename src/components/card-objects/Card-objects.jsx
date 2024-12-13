@@ -23,8 +23,10 @@ const CardObjects = ({
 			<StyledDivFlexImg>
 				<StyledImg src={img} alt='' />
 				<div>
-					<StyleFlexTextName>{name}</StyleFlexTextName>
-					<StyleFlexTextVerify>{verify}</StyleFlexTextVerify>
+					<StyleFlexTextName $bodyColor={bodyColor}>{name}</StyleFlexTextName>
+					<StyleFlexTextVerify $bodyColor={bodyColor}>
+						{verify}
+					</StyleFlexTextVerify>
 				</div>
 			</StyledDivFlexImg>
 			<StyledTestimonyHighlights $bodyColor={bodyColor}>
