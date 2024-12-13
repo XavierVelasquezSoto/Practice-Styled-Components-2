@@ -42,6 +42,8 @@ const StyledCardObjects = styled.div`
 		}};
 		/* border: solid black; */
 		margin-bottom: 0;
+
+		box-shadow: rgb(207, 207, 207, 0.5) 0 0px 20px 10px;
 	}
 `;
 

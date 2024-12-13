@@ -16,7 +16,7 @@ export const CARD_INFO = [
 		id: v4(),
 		bodyColor: 'jonathan',
 		img: '/assets/images/image-jonathan.jpg',
-		name: 'Daniel Clifford',
+		name: 'Jonathan Walters',
 		verify: 'Verified Graduate',
 		testimonyHighlights: 'The team was very supportive and kept me motivated',
 		testimony:
@@ -26,7 +26,7 @@ export const CARD_INFO = [
 		id: v4(),
 		bodyColor: 'jeanette',
 		img: '/assets/images/image-jeanette.jpg',
-		name: 'Daniel Clifford',
+		name: 'Jeanette Harmon',
 		verify: 'Verified Graduate',
 		testimonyHighlights: 'An overall wonderful and rewarding experience',
 		testimony:
@@ -36,7 +36,7 @@ export const CARD_INFO = [
 		id: v4(),
 		bodyColor: 'patrick',
 		img: '/assets/images/image-patrick.jpg',
-		name: 'Daniel Clifford',
+		name: 'Patrick Abrams',
 		verify: 'Verified Graduate',
 		testimonyHighlights:
 			'Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.',
@@ -47,7 +47,7 @@ export const CARD_INFO = [
 		id: v4(),
 		bodyColor: 'kira',
 		img: '/assets/images/image-kira.jpg',
-		name: 'Daniel Clifford',
+		name: 'Kira Whittle',
 		verify: 'Verified Graduate',
 		testimonyHighlights: 'Such a life-changing experience. Highly recommended!',
 		testimony:
