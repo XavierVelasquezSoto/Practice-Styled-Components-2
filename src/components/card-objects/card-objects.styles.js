@@ -19,28 +19,28 @@ const StyledCardObjects = styled.div`
 	margin-bottom: 24px;
 	border-radius: 10px;
 	@media screen and (width > 1024px) {
-		/*height: ${props => {
+		height: ${props => {
 			if (props.$bodyColor === 'daniel') return '282px';
 			if (props.$bodyColor === 'jonathan') return '282px';
-			if (props.$bodyColor === 'jeanette') return '572px';
+			if (props.$bodyColor === 'jeanette') return '255px';
 			if (props.$bodyColor === 'patrick') return '266px';
-			if (props.$bodyColor === 'kira') return '266px';
-		}}; */
+			if (props.$bodyColor === 'kira') return '572px';
+		}};
 		grid-column: ${props => {
 			if (props.$bodyColor === 'daniel') return '1/3';
 			if (props.$bodyColor === 'jonathan') return '3/4';
-			if (props.$bodyColor === 'jeanette') return '1/1';
-			if (props.$bodyColor === 'patrick') return '1/4';
-			if (props.$bodyColor === 'kira') return '2/5';
+			if (props.$bodyColor === 'jeanette') return '1/2';
+			if (props.$bodyColor === 'patrick') return '2/4';
+			if (props.$bodyColor === 'kira') return '4/5';
 		}};
 		grid-row: ${props => {
 			if (props.$bodyColor === 'daniel') return '1/3';
 			if (props.$bodyColor === 'jonathan') return '1/3';
-			if (props.$bodyColor === 'jeanette') return '3/3';
-			if (props.$bodyColor === 'patrick') return '0';
-			if (props.$bodyColor === 'kira') return '0';
+			if (props.$bodyColor === 'jeanette') return '2/2';
+			if (props.$bodyColor === 'patrick') return '2/3';
+			if (props.$bodyColor === 'kira') return '1/4';
 		}};
-		border: solid black;
+		/* border: solid black; */
 		margin-bottom: 0;
 	}
 `;
@@ -113,6 +113,16 @@ const StyledTestimony = styled.p`
 		if (props.$bodyColor === 'patrick') return '16px';
 		if (props.$bodyColor === 'kira') return '16px';
 	}};
+
+	@media screen and (width > 1024px) {
+		padding-top: ${props => {
+			if (props.$bodyColor === 'daniel') return '16px';
+			if (props.$bodyColor === 'jonathan') return '16px';
+			if (props.$bodyColor === 'jeanette') return '24px';
+			if (props.$bodyColor === 'patrick') return '24px';
+			if (props.$bodyColor === 'kira') return '24px';
+		}};
+	}
 `;
 // 16 16 16 16
 export {
