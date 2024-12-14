@@ -1,15 +1,19 @@
 import { CARD_INFO } from '../../constants/cardInfo';
 import CardObjects from '../card-objects/Card-objects';
-// import { StyledCardContainer } from './card-container.styles';
 
 const CardContainer = () => {
 	return (
 		<>
 			{CARD_INFO.map(cardInfo => {
+				// console.log(cardInfo);
 				return (
 					<CardObjects
 						key={cardInfo.id}
-						bodyColor={cardInfo.bodyColor}
+						marginTopDesktop={cardInfo.marginTopDesktop}
+						marginTopMobile={cardInfo.marginTopMobile}
+						colorText={cardInfo.colorText}
+						bgColor={cardInfo.bgColor}
+						heightCard={cardInfo.heightCard}
 						img={cardInfo.img}
 						name={cardInfo.name}
 						verify={cardInfo.verify}

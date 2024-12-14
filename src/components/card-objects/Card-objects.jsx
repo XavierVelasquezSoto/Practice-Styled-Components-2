@@ -1,6 +1,5 @@
 import {
 	StyledCardObjects,
-	// StyledDivImg,
 	StyledDivFlexImg,
 	StyledImg,
 	StyleFlexTextName,
@@ -11,28 +10,39 @@ import {
 // console.log(StyledCardObjects);
 
 const CardObjects = ({
-	bodyColor,
+	marginTopDesktop,
+	marginTopMobile,
+	heightCard,
+	colorText,
+	bgColor,
 	img,
 	name,
 	verify,
 	testimonyHighlights,
 	testimony
 }) => {
+	// console.log(colorText);
 	return (
-		<StyledCardObjects $bodyColor={bodyColor}>
+		<StyledCardObjects $bgColor={bgColor} $heightCard={heightCard}>
 			<StyledDivFlexImg>
 				<StyledImg src={img} alt='' />
 				<div>
-					<StyleFlexTextName $bodyColor={bodyColor}>{name}</StyleFlexTextName>
-					<StyleFlexTextVerify $bodyColor={bodyColor}>
+					<StyleFlexTextName $colorText={colorText}>{name}</StyleFlexTextName>
+					<StyleFlexTextVerify $colorText={colorText}>
 						{verify}
 					</StyleFlexTextVerify>
 				</div>
 			</StyledDivFlexImg>
-			<StyledTestimonyHighlights $bodyColor={bodyColor}>
+			<StyledTestimonyHighlights $colorText={colorText}>
 				{testimonyHighlights}
 			</StyledTestimonyHighlights>
-			<StyledTestimony $bodyColor={bodyColor}>{testimony}</StyledTestimony>
+			<StyledTestimony
+				$colorText={colorText}
+				$marginTopMobile={marginTopMobile}
+				$marginTopDesktop={marginTopDesktop}
+			>
+				{testimony}
+			</StyledTestimony>
 		</StyledCardObjects>
 	);
 };

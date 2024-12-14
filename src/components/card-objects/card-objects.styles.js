@@ -1,56 +1,50 @@
 import styled from 'styled-components';
 
 const StyledCardObjects = styled.div`
-	background-color: ${props => {
-		if (props.$bodyColor === 'daniel') return '#733FC8';
-		if (props.$bodyColor === 'jonathan') return '#48556A';
-		if (props.$bodyColor === 'jeanette') return '#fff';
-		if (props.$bodyColor === 'patrick') return '#19202D';
-		if (props.$bodyColor === 'kira') return '#fff';
-	}};
-	height: ${props => {
-		if (props.$bodyColor === 'daniel') return '444px';
-		if (props.$bodyColor === 'jonathan') return '240px';
-		if (props.$bodyColor === 'jeanette') return '222px';
-		if (props.$bodyColor === 'patrick') return '384px';
-		if (props.$bodyColor === 'kira') return '438px';
-	}};
+	background-color: ${props => props.$bgColor};
+	height: ${props => props.$heightCard};
 	padding: 26px 32px 32px 32px;
 	margin-bottom: 24px;
 	border-radius: 10px;
+
+	&:nth-child(1) {
+		background-image: url(assets/images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position: 250px top;
+	}
+
 	@media screen and (width > 1024px) {
 		height: ${props => {
-			if (props.$bodyColor === 'daniel') return '282px';
-			if (props.$bodyColor === 'jonathan') return '282px';
-			if (props.$bodyColor === 'jeanette') return '255px';
-			if (props.$bodyColor === 'patrick') return '255px';
-			if (props.$bodyColor === 'kira') return '572px';
+			if (props.$bgColor === 'daniel') return '282px';
+			if (props.$bgColor === 'jonathan') return '282px';
+			if (props.$bgColor === 'jeanette') return '255px';
+			if (props.$bgColor === 'patrick') return '255px';
+			if (props.$bgColor === 'kira') return '572px';
 		}};
 		grid-column: ${props => {
-			if (props.$bodyColor === 'daniel') return '1/3';
-			if (props.$bodyColor === 'jonathan') return '3/4';
-			if (props.$bodyColor === 'jeanette') return '1/2';
-			if (props.$bodyColor === 'patrick') return '2/4';
-			if (props.$bodyColor === 'kira') return '4/5';
+			if (props.$bgColor === 'daniel') return '1/3';
+			if (props.$bgColor === 'jonathan') return '3/4';
+			if (props.$bgColor === 'jeanette') return '1/2';
+			if (props.$bgColor === 'patrick') return '2/4';
+			if (props.$bgColor === 'kira') return '4/5';
 		}};
 		grid-row: ${props => {
-			if (props.$bodyColor === 'daniel') return '1/3';
-			if (props.$bodyColor === 'jonathan') return '1/3';
-			if (props.$bodyColor === 'jeanette') return '2/2';
-			if (props.$bodyColor === 'patrick') return '2/3';
-			if (props.$bodyColor === 'kira') return '1/2';
+			if (props.$bgColor === 'daniel') return '1/3';
+			if (props.$bgColor === 'jonathan') return '1/3';
+			if (props.$bgColor === 'jeanette') return '2/2';
+			if (props.$bgColor === 'patrick') return '2/3';
+			if (props.$bgColor === 'kira') return '1/2';
 		}};
-		/* border: solid black; */
+
 		margin-bottom: 0;
 		box-shadow: rgb(207, 207, 207, 0.5) 0 0px 20px 10px;
+		&:nth-child(1) {
+			background-image: url(assets/images/bg-pattern-quotation.svg);
+			background-repeat: no-repeat;
+			background-position: 150px top;
+		}
 	}
 `;
-
-/* const StyledDivImg = styled.img`
-	position: relative;
-	left: 205px;
-	top: -26px;
-`; */
 
 const StyledDivFlexImg = styled.div`
 	display: flex;
@@ -67,13 +61,7 @@ const StyledImg = styled.img`
 const StyleFlexTextName = styled.p`
 	font-size: var(--line-height-l);
 	font-weight: var(--font-weight-medium);
-	color: ${props => {
-		if (props.$bodyColor === 'daniel') return '#fff';
-		if (props.$bodyColor === 'jonathan') return '#fff';
-		if (props.$bodyColor === 'jeanette') return '#48556A';
-		if (props.$bodyColor === 'patrick') return '#fff';
-		if (props.$bodyColor === 'kira') return '#48556A';
-	}};
+	color: ${props => props.$colorText};
 	margin: 0;
 	line-height: var(--line-height-l);
 	padding-bottom: 4px;
@@ -82,13 +70,7 @@ const StyleFlexTextName = styled.p`
 const StyleFlexTextVerify = styled.p`
 	font-size: var(--line-height-m);
 	font-weight: var(--font-weight-medium);
-	color: ${props => {
-		if (props.$bodyColor === 'daniel') return '#fff';
-		if (props.$bodyColor === 'jonathan') return '#fff';
-		if (props.$bodyColor === 'jeanette') return '#48556A';
-		if (props.$bodyColor === 'patrick') return '#fff';
-		if (props.$bodyColor === 'kira') return '#48556A';
-	}};
+	color: ${props => props.$colorText};
 	margin: 0;
 	opacity: 0.5;
 	line-height: var(--line-height-m);
@@ -96,51 +78,27 @@ const StyleFlexTextVerify = styled.p`
 
 const StyledTestimonyHighlights = styled.h2`
 	margin: 0;
-	color: ${props => {
-		if (props.$bodyColor === 'daniel') return '#fff';
-		if (props.$bodyColor === 'jonathan') return '#fff';
-		if (props.$bodyColor === 'jeanette') return '#48556A';
-		if (props.$bodyColor === 'patrick') return '#fff';
-		if (props.$bodyColor === 'kira') return '#48556A';
-	}};
+	color: ${props => props.$colorText};
 	font-weight: var(--font-weight-semibold);
-	font-size: var(--font-size-xl);
+	font-size: 20px;
 	line-height: var(--line-height-auto);
 	padding-top: 18px;
 `;
 
 const StyledTestimony = styled.p`
 	margin: 0;
-	color: ${props => {
-		if (props.$bodyColor === 'daniel') return '#fff';
-		if (props.$bodyColor === 'jonathan') return '#fff';
-		if (props.$bodyColor === 'jeanette') return '#48556A';
-		if (props.$bodyColor === 'patrick') return '#fff';
-		if (props.$bodyColor === 'kira') return '#48556A';
-	}};
+	font-size: 13px;
+	color: ${props => props.$colorText};
 	opacity: 0.7;
-	padding-top: ${props => {
-		if (props.$bodyColor === 'daniel') return '40px';
-		if (props.$bodyColor === 'jonathan') return '16px';
-		if (props.$bodyColor === 'jeanette') return '16px';
-		if (props.$bodyColor === 'patrick') return '16px';
-		if (props.$bodyColor === 'kira') return '16px';
-	}};
+	margin-top: ${props => props.$marginTopMobile};
 
 	@media screen and (width > 1024px) {
-		padding-top: ${props => {
-			if (props.$bodyColor === 'daniel') return '16px';
-			if (props.$bodyColor === 'jonathan') return '16px';
-			if (props.$bodyColor === 'jeanette') return '24px';
-			if (props.$bodyColor === 'patrick') return '24px';
-			if (props.$bodyColor === 'kira') return '24px';
-		}};
+		margin-top: ${props => props.$marginTopDesktop};
 	}
 `;
-// 16 16 16 16
+
 export {
 	StyledCardObjects,
-	// StyledDivImg,
 	StyledDivFlexImg,
 	StyledImg,
 	StyleFlexTextName,
