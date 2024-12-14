@@ -23,6 +23,7 @@ const StyledCardObjects = styled.div`
 			background-repeat: no-repeat;
 			background-position: 400px top;
 		}
+		min-height: 100%;
 	}
 `;
 
