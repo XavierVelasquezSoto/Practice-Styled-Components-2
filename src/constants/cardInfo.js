@@ -14,8 +14,10 @@ export const CARD_INFO = [
 		colorText: '#fff',
 		bgColor: '#733FC8',
 		heightCard: '444px',
-		marginTopMobile: '40px',
-		marginTopDesktop: '16px'
+		marginBottomMobile: '40px',
+		marginBottomDesktop: '16px',
+		gridColumn: '1/3',
+		gridRow: '1/2'
 	},
 	{
 		id: v4(),
@@ -29,8 +31,10 @@ export const CARD_INFO = [
 		colorText: '#fff',
 		bgColor: '#48556A',
 		heightCard: '240px',
-		marginTopMobile: '16px',
-		marginTopDesktop: '16px'
+		marginBottomMobile: '16px',
+		marginBottomDesktop: '16px',
+		gridColumn: '3/4',
+		gridRow: '1/2'
 	},
 	{
 		id: v4(),
@@ -44,8 +48,10 @@ export const CARD_INFO = [
 		colorText: '#48556A',
 		bgColor: '#fff',
 		heightCard: '222px',
-		marginTopMobile: '16px',
-		marginTopDesktop: '24px'
+		marginBottomMobile: '16px',
+		marginBottomDesktop: '24px',
+		gridColumn: '1/2',
+		gridRow: '2/2'
 	},
 	{
 		id: v4(),
@@ -60,8 +66,10 @@ export const CARD_INFO = [
 		colorText: '#fff',
 		bgColor: '#19202D',
 		heightCard: '384px',
-		marginTopMobile: '16px',
-		marginTopDesktop: '24px'
+		marginBottomMobile: '16px',
+		marginBottomDesktop: '24px',
+		gridColumn: '2/4',
+		gridRow: '2/3'
 	},
 	{
 		id: v4(),
@@ -75,7 +83,9 @@ export const CARD_INFO = [
 		colorText: '#48556A',
 		bgColor: '#fff',
 		heightCard: '438px',
-		marginTopMobile: '16px',
-		marginTopDesktop: '24px'
+		marginBottomMobile: '16px',
+		marginBottomDesktop: '24px',
+		gridColumn: '4/5',
+		gridRow: '1/2'
 	}
 ];

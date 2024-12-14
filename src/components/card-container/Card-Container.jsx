@@ -9,8 +9,10 @@ const CardContainer = () => {
 				return (
 					<CardObjects
 						key={cardInfo.id}
-						marginTopDesktop={cardInfo.marginTopDesktop}
-						marginTopMobile={cardInfo.marginTopMobile}
+						gridRow={cardInfo.gridRow}
+						gridColumn={cardInfo.gridColumn}
+						marginBottomDesktop={cardInfo.marginBottomDesktop}
+						marginBottomMobile={cardInfo.marginBottomMobile}
 						colorText={cardInfo.colorText}
 						bgColor={cardInfo.bgColor}
 						heightCard={cardInfo.heightCard}

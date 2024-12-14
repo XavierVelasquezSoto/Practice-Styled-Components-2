@@ -10,8 +10,10 @@ import {
 // console.log(StyledCardObjects);
 
 const CardObjects = ({
-	marginTopDesktop,
-	marginTopMobile,
+	gridRow,
+	gridColumn,
+	marginBottomDesktop,
+	marginBottomMobile,
 	heightCard,
 	colorText,
 	bgColor,
@@ -23,7 +25,12 @@ const CardObjects = ({
 }) => {
 	// console.log(colorText);
 	return (
-		<StyledCardObjects $bgColor={bgColor} $heightCard={heightCard}>
+		<StyledCardObjects
+			$bgColor={bgColor}
+			$heightCard={heightCard}
+			$gridColumn={gridColumn}
+			$gridRow={gridRow}
+		>
 			<StyledDivFlexImg>
 				<StyledImg src={img} alt='' />
 				<div>
@@ -33,16 +40,14 @@ const CardObjects = ({
 					</StyleFlexTextVerify>
 				</div>
 			</StyledDivFlexImg>
-			<StyledTestimonyHighlights $colorText={colorText}>
+			<StyledTestimonyHighlights
+				$colorText={colorText}
+				$marginBottomMobile={marginBottomMobile}
+				$marginBottomDesktop={marginBottomDesktop}
+			>
 				{testimonyHighlights}
 			</StyledTestimonyHighlights>
-			<StyledTestimony
-				$colorText={colorText}
-				$marginTopMobile={marginTopMobile}
-				$marginTopDesktop={marginTopDesktop}
-			>
-				{testimony}
-			</StyledTestimony>
+			<StyledTestimony $colorText={colorText}>{testimony}</StyledTestimony>
 		</StyledCardObjects>
 	);
 };
