@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledCardObjects = styled.div`
 	background-color: ${props => props.$bgColor};
-	/* height: ${props => props.$heightCard}; */
 	padding: 26px 32px 32px 32px;
 	margin-bottom: 24px;
 	border-radius: 10px;
@@ -17,6 +16,7 @@ const StyledCardObjects = styled.div`
 		grid-column: ${props => props.$gridColumn};
 		grid-row: ${props => props.$gridRow};
 		margin-bottom: 0;
+		padding: ${props => props.$paddingContainerDesktop};
 		box-shadow: rgb(207, 207, 207, 0.5) 0 0px 20px 10px;
 		&:nth-child(1) {
 			background-image: url(assets/images/bg-pattern-quotation.svg);

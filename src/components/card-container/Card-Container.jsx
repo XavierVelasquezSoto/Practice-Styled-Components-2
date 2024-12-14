@@ -15,7 +15,7 @@ const CardContainer = () => {
 						marginBottomMobile={cardInfo.marginBottomMobile}
 						colorText={cardInfo.colorText}
 						bgColor={cardInfo.bgColor}
-						heightCard={cardInfo.heightCard}
+						paddingContainerDesktop={cardInfo.paddingContainerDesktop}
 						img={cardInfo.img}
 						name={cardInfo.name}
 						verify={cardInfo.verify}

@@ -14,7 +14,7 @@ const CardObjects = ({
 	gridColumn,
 	marginBottomDesktop,
 	marginBottomMobile,
-	heightCard,
+	paddingContainerDesktop,
 	colorText,
 	bgColor,
 	img,
@@ -27,7 +27,7 @@ const CardObjects = ({
 	return (
 		<StyledCardObjects
 			$bgColor={bgColor}
-			$heightCard={heightCard}
+			$paddingContainerDesktop={paddingContainerDesktop}
 			$gridColumn={gridColumn}
 			$gridRow={gridRow}
 		>

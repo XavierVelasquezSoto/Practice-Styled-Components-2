@@ -8,7 +8,7 @@ const StyledCardFlex = styled.div`
 		display: grid;
 		grid-template-columns: repeat(4, 255px);
 		grid-template-rows: 282px, 282px, 266px, 266px, 572px;
-		/* align-items: start; */
+		align-items: start;
 		gap: 24px 30px;
 		margin: auto;
 		margin-top: 150px;
