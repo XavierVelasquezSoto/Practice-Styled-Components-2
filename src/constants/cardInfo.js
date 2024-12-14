@@ -33,8 +33,8 @@ export const CARD_INFO = [
 		heightCard: '240px',
 		marginBottomMobile: '16px',
 		marginBottomDesktop: '16px',
-		gridColumn: '3/4',
-		gridRow: '1/2'
+		gridColumn: '3/4'
+		// gridRow: '3/1'
 	},
 	{
 		id: v4(),
@@ -85,7 +85,7 @@ export const CARD_INFO = [
 		heightCard: '438px',
 		marginBottomMobile: '16px',
 		marginBottomDesktop: '24px',
-		gridColumn: '4/5',
-		gridRow: '1/2'
+		gridColumn: '4/4',
+		gridRow: '1/4'
 	}
 ];

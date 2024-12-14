@@ -16,7 +16,6 @@ const StyledCardObjects = styled.div`
 	@media screen and (width > 1024px) {
 		grid-column: ${props => props.$gridColumn};
 		grid-row: ${props => props.$gridRow};
-		padding: 26px 32px 32px 32px;
 		margin-bottom: 0;
 		box-shadow: rgb(207, 207, 207, 0.5) 0 0px 20px 10px;
 		&:nth-child(1) {
