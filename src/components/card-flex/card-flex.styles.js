@@ -14,7 +14,6 @@ const StyledCardFlex = styled.div`
 		margin-top: 150px;
 		margin-left: 150px;
 		overflow: hidden;
-		box-sizing: border-box;
 	}
 `;
 
